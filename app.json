@@ -1,0 +1,29 @@
+{
+  "name": "Rock Paper Scissors Lizard Spock",
+  "description": "A Telnyx Call Control demo application",
+  "repository": "https://github.com/team-telnyx/rock-paper-scissors-lizard-spock",
+  "keywords": [
+    "call-control",
+    "telephony",
+    "voice",
+    "telnyx",
+    "elixir",
+    "erlang",
+    "beam",
+    "otp"
+  ],
+  "env": {
+    "API_KEY": {
+      "description": "The Telnyx API Key to authenticate the requests.",
+      "required": true
+    },
+    "HOST": {
+      "description": "Set it to either the Heroku or custom domain.",
+      "required": true
+    },
+    "SECRET_KEY_BASE": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "required": true
+    }
+  }
+}

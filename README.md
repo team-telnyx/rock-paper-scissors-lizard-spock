@@ -14,7 +14,9 @@ For singleplayer, choose [TeXML application](https://portal.telnyx.com/#/app/cal
 
 For multiplayer, choose [Call Control application](https://portal.telnyx.com/#/app/call-control/applications) and set the webhook URL to `http://<your-host>/webhook/mulitplayer` (using POST).
 
-Connect a phone number to the connection and obtain the API key.
+[Buy a new phone number](https://portal.telnyx.com/#/app/numbers/buy-numbers) and connect it to the connection and obtain the [API Key](https://portal.telnyx.com/#/app/api-keys).
+
+## Locally
 
 Install dependencies:
 
@@ -32,6 +34,18 @@ Start the server:
 ## Play
 
 Call the phone number connected with the application and wait for your opponent to do the same (in multiplayer mode) or play against the machine (singleplayer mode).
+
+## Deploying to Heroku
+
+Click on the button below to deploy this application to Heroku:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+Set the required environment variables:
+
+- API_KEY - You can get it on [Telnyx Customer Portal](https://portal.telnyx.com/#/app/api-keys)
+- SECRET_KEY_BASE - You can generate a fresh key with the following command: `mix phx.gen.secret`
+- HOST - Set it to either the Heroku or custom domain
 
 ## Developers
 

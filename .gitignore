@@ -23,3 +23,5 @@ erl_crash.dump
 call_control-*.tar
 
 config/*secret.exs
+
+.elixir_ls
